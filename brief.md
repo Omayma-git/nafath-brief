@@ -17,10 +17,16 @@ When offline, the responder's mobile app should keep essential information acces
 Resource: Android Developers - Build an offline-first app - https://developer.android.com/topic/architecture/data-layer/offline-first
 
 ## Networking
+5G network slicing allows operators to create logical network slices with connectivity tailored to different services. In an emergency communication system, a slice could be configured to prioritize responders' traffic and provide suitable quality of service during network congestion. This can help emergency teams maintain more reliable communication when many people are using the network. However, network slicing alone cannot guarantee service during a complete network outage, so additional resilience measures are still needed.
+Resource: GSMA - 5G Standalone opens up new opportunities - https://www.gsma.com/solutions-and-impact/technologies/networks/gsma_resources/5g-standalone-opens-up-new-opportunities/
 
 ## Cybersecurity
+NIST's incident response model includes six functions: Govern, Identify, Protect, Detect, Respond, and Recover. The first three support preparation, while the last three focus on handling incidents. During a cyberattack on emergency communications, the operator should detect suspicious activity, investigate the incident, contain affected systems, and communicate with relevant teams. Recovery involves restoring services safely and checking that systems operate correctly. Lessons learned should improve future protection and response plans.
+Resource: NIST - Incident Response Recommendations and Considerations for Cybersecurity Risk Management - https://doi.org/10.6028/NIST.SP.800-61r3
 
 ## Data
+A star schema uses a central fact table connected to dimension tables, while a snowflake schema normalizes dimensions into multiple related tables. For daily network usage reports by region, a star schema is generally more suitable because it simplifies reporting and analysis. The fact table could store daily data usage and connection counts, while date and region dimensions support filtering and comparisons. A snowflake schema may reduce duplicated dimension data but introduces more relationships and complexity.
+Resource: Microsoft Learn - Understand star schema and the importance for Power BI - https://learn.microsoft.com/en-us/power-bi/guidance/star-schema
 
 ## Misconception in My Track
 
