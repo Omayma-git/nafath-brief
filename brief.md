@@ -29,5 +29,7 @@ A star schema uses a central fact table connected to dimension tables, while a s
 Resource: Microsoft Learn - Understand star schema and the importance for Power BI - https://learn.microsoft.com/en-us/power-bi/guidance/star-schema
 
 ## Misconception in My Track
+A common misconception is that all users on a 5G network must receive the same level of service, even when the network is congested. In reality, 5G network slicing allows operators to tailor connectivity to different applications and services. For emergency responders, a dedicated slice could provide suitable quality of service and prioritize critical communications during busy periods. However, slicing does not automatically prevent every outage or guarantee uninterrupted service. The GSMA article “5G Standalone opens up new opportunities”, in the paragraph beginning “Why is that?”, explains how network slices customize connectivity and support high quality of service in challenging scenarios.
 
 ## Open Question
+How can the telecom operator test whether a dedicated 5G network slice maintains reliable communication for emergency responders during severe congestion and partial network outages? I would like to learn which performance measurements and backup mechanisms are most effective in these situations.
